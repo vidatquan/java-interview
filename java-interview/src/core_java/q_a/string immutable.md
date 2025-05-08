@@ -47,3 +47,6 @@ Tính bất biến của `String` là **thiết kế có chủ ý** trong Java n
 * **Bảo mật**
 
 Tuy nhiên, với các bài toán thao tác chuỗi nặng, cần sử dụng `StringBuilder` hoặc `StringBuffer` để **tránh lãng phí tài nguyên**.
+
+
+
