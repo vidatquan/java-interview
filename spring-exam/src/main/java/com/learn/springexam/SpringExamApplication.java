@@ -1,13 +1,14 @@
 package com.learn.springexam;
 
+import com.learn.democore.constant.Constant;
 import com.learn.springexam.service.UserServiceConstructor;
 import com.learn.springexam.service.UserServiceSetter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+
 
 @SpringBootApplication
 public class SpringExamApplication {
@@ -19,7 +20,10 @@ public class SpringExamApplication {
 
         UserServiceSetter service = context.getBean(UserServiceSetter.class);
         service.doWork();
+
+        System.out.println(Constant.QTY_SCALE);
     }
+
 
     @Bean
     public CommandLineRunner run(UserServiceConstructor service1, UserServiceSetter service2) {
